@@ -55,7 +55,7 @@ def insert_into_db(cnx, cursor, stocks):
                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s )")
 
     for stock in stocks:
-        #print(stock)
+        print(stock)
         try:
             stock_1 = Share(stock)    
             data = get_stock_data(stock, update=False)
